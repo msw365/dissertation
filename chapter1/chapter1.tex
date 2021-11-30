@@ -5,7 +5,7 @@ The majority of organisms have an immune system, defined as a biological network
 	\centering
 	\includegraphics[width=\textwidth]{../figures/chapter1/innateadaptiveimmunesystem.png}
 	\caption{Cell types of the innate vs. the adaptive immune system}
-	\caption*{A Venn diagram of the immune system. The typical conception of the vertebrate immune system is typically two-armed, broken into a faster-but-general responding innate immune system (left), and a slower-but-more-specific adaptive immune system (right), of which T cells are a part of.  Almost all cell types that modern immunology research is concerned with falls somewhere within these two circles or their overlap - some immunology research is interested in characterizing certain effector or support immune cell types that fall in between innate and adaptive immunity (or can transfer their skills and interface between the two, calling into question the ontology "innate" and "adaptive" immune systems). This figure is adapted from \cite{Alam2007}.}
+	\caption*{A Venn diagram of the immune system. The typical conception of the vertebrate immune system is typically two-armed, broken into a faster-but-general responding innate immune system (left), and a slower-but-more-specific adaptive immune system (right), of which T cells are a part of.  Almost all cell types that modern immunology research is concerned with falls somewhere within these two circles or their overlap - some immunology research is interested in characterizing certain effector or support immune cell types that fall in between innate and adaptive immunity (or can transfer their skills and interface between the two, calling into question the ontics of "innate" and "adaptive" immune systems) \cite{Heidegger1962}. This figure is adapted from \cite{Alam2007}.}
 	\label{fig:innateadaptiveimmunesystem}
 \end{figure}
 
@@ -20,13 +20,21 @@ The process of differentiating into T cells is primarily motivated by the need t
 
 Once a stable TCR heterodimer has been formed, the T cells must undergo a process of positive and negative selection. Positive selection involves presenting the T cells with self-antigen presented on MHC with the selection criteria of being able to bind with this complex. Those T cells that are able to bind to an MHC complex presenting self-antigen receive a survival signal, while those with TCRs that cannot MHCs do not receive this survival signal. Therefore, the body positively filters/selects for T cells with TCRs that can recognize MHCs, leaving those that cannot recognize MHCs to die off. 
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter1/posnegsel.png}
+	\caption{The immunological synapse}
+	\caption*{Yeee This figure is adapted from https://www.nature.com/articles/nri1085.}
+	\label{fig:posnegsel}
+\end{figure}
+
 After obtaining T cells that are capable of binding to MHC molecules, the next step is to select for T cells that do not auto-react to self-antigen, called negative selection. This ensures that T cells are tolerant of self-antigen and prevents auto-immunity conditions in the organism. In this stage of selection, T cells that bind to MHC presenting self-antigen and activate receive an apoptotic signal that leads to cell death. Negative selection therefore prunes the T cell population for T cells that can not only bind to MHC but do not react to self-antigen. The vast majority of thymocytes (98\%+) fail to pass positive and negative selection. Following positive and negative selection, the resulting T cell set can therefore bind to any antigen (presumably belonging to any foreign pathogen) so long that the antigen is distinct from the body’s self-antigens. 
 After these stages of T cell development, these T cells (called naïve T cells) then exit the thymus and begin to circulate in the host, where they will spend their time surveying the host for disease and foreign antigens.
 
 \section{TCR activation and downstream signaling}
 If a CD8+ T cell engages an infected cell presenting foreign peptide, the T cell will initiate a cascade of antigenic-specific intracellular signaling events. Upon ligation of the TCR to the pMHC complex, the CD3 proteins (CD3$\epsilon \gamma$ and CD3$\epsilon \delta$ heterodimers and a CD3$\zeta$ homodimer) bearing ITAM (immunoreceptor tyrosine-based activation motif) also bind to the TCR.  The ITAMs on the CD3$\zeta$ get phosphorylated, so that cytosolic signaling proteins can bind to phosphorylated ITAMs and propagate the signal from the triggered TCR further downstream into the T cell. CD3$\zeta$ contains three ITAMs, while CD3$\delta$, CD3 $\gamma$, and CD3$\epsilon$ all only contain one ITAM. The CD3 chains are needed as the cytosolic tail of the TCR is extremely short and structurally do not support significant adaptor features for signal amplification molecules. This modularity also allows for an increased range of TCR signaling for fine-tuning key features of the T cell effector response (e.g. killing, proliferation, signaling, cytokine secretion) in response to a number of diverse inputs such as antigen strength, lifetime of interaction, and number of bound-TCRs at the IS.
 
-The phosphorylated CD3 ITAMs recruit the protein tyrosine kinase Zap70 that binds to the phoshorylated tyrosine motifs via its SH2 domain.  This brings Zap70 closer to CD8-bound Lck, which further phosphorylates Zap70, activating Zap70. Upon Lck-mediated phosphorylation of Zap70,  Zap70 itself phosphorylates and activates the transmembrane protein called linker for activation of T cells (LAT). LAT acts as a scaffold, providing binding sites for a number of signaling molecules (via its own phosphorylated sites) that link these signaling molecules, including the lymphocyte cytosolic protein 2 (SLP76) which provides even further additional binding sites, on the LAT signaling complex, SOS,  Grb2, Itk, Vav, Nck1, and Fyb, in space and time.  
+The phosphorylated CD3 ITAMs recruit the protein tyrosine kinase Zap70 that binds to the phoshorylated tyrosine motifs via its SH2 domain.  This brings Zap70 closer to CD8-bound Lck, which further phosphorylates Zap70, activating Zap70. Upon Lck-mediated phosphorylation of Zap70,  Zap70 itself phosphorylates and activates the transmembrane protein called linker for activation of T cells (LAT). LAT acts as a scaffold, providing binding sites for a number of signaling molecules (via its own phosphorylated sites) that link these signaling molecules, including the lymphocyte cytosolic protein 2 (SLP76) which provides even further additional binding sites on the LAT signaling complex, SOS,  Grb2, Itk, Vav, Nck1, and Fyb, in space and time.  
 
 One of the most crucial signaling molecules that binds to LAT is the protein phospholipase C$\gamma$1 (PLC$\gamma$), which generates key lipid secondary messenger molecules. Phosphatidylinositol 4,5-bisphosphate (PIP2) is an input to PLC$\gamma$ function. Once phosphorylated and activated by Itk, PLC$\gamma$'s enzymatic activity (using PIP2 as a substrate) generates two products: diacylglycerol (DAG) and the soluble inositol 1,4,5-trisphosphate (IP3). Diacylglycerol accumulates in the IS, which prompts recruitment of the microtubule motor protein dynein and drives polarization of the microtubule-organizing center (MTOC) \cite{Quann2009} and the recruitment of lytic granules to the immune synapse (further discussed in the T cell degranulation and target cell death introduction section \cite{Stinchcombe2006}. IP3 is soluble and diffuses throughout the cytosol, eventually binding to its receptor inositol trisphosphate receptor (InsP3R), located on the endoplasmic reticulum (ER). The binding of IP3 to InsP3R triggers release of calcium ($Ca^{2+}$) ions into the cytosol, initiating calcium-dependent transcription programming. These include the NFAT, NF-$\kappa$B, and AP1 signaling pathways, all of which assist in fully activating the T cell. Another notable lipid secondary messenger is phosphatidylinositol (3,4,5)-trisphosphate (PIP3). PIP2 is phosphorylated by the phosphoinositide 3-kinase (PI-3K) to give PIP3, which further activates downstream signaling proteins, most notably Akt, which is highly involved in T cell metabolism.
 
@@ -58,7 +66,27 @@ The T cell has evolved countless mechanisms in order to balance this dual mandat
 
 This calcium flux is a required step for lymphocyte degranulation, which is (ORAI1-mediated calcium influx is required for human cytotoxic lymphocyte degranulation and target cell lysis)
 
-Cytotoxic T lymphocytes store their perforin and granzymes in specialized secretory lysosomes called lytic granules (0.5 to 2 $\mu$) \cite{Sanchez-Ruiz2011}, whose acidic pH environment quenches the lytic and apoptotic activity of both proteins \cite{Thiery2014, Keefe2005}. Following mere minutes of target cell recognition, the lytic granules are trafficked along microtubules to the immunological synapse (IS). At this site, they fuse with the plasma membrane, releasing their contents into the intercellular space. At the same time,  F-actin and the associated actin nucleation promoting factors (NPFs) at the IS undergo significant spatiotemporal remodeling.  This results in a highly complex landscape of highly dynamic actin sheets and protrusions \cite{Ritter2015}. Canonically, actin clearance from the center of the immune synapse (cSMAC) is required for fusion of lytic granules to the center of the synapse \cite{Ritter2015}, although newer models of degranulation highlight the need for transient actin polymerization at the site of degranulation to potentiate the pore forming effects of perforin \cite{Tamzalit2018}. This is related to T cell mechanical force exertion against the target, which significantly amplifies T cell effector function \cite{Tamzalit2018}.
+Cytotoxic T lymphocytes store their perforin and granzymes in specialized secretory lysosomes called lytic granules (0.5 to 2 $\mu$) \cite{Sanchez-Ruiz2011}, whose acidic pH environment quenches the lytic and apoptotic activity of both proteins \cite{Thiery2014, Keefe2005}. Following mere minutes of target cell recognition, the lytic granules are trafficked along microtubules to the immunological synapse (IS). At this site, they fuse with the plasma membrane, releasing their contents into the intercellular space.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter1/degranulation.png}
+	\caption{The immunological synapse}
+	\caption*{Yeee This figure is adapted from \cite{Keefe2005}.}
+	\label{fig:degranulation}
+\end{figure}
+
+At the same time,  F-actin and the associated actin nucleation promoting factors (NPFs) at the IS undergo significant spatiotemporal remodeling.  This results in a highly complex landscape of highly dynamic actin sheets and protrusions \cite{Ritter2015}. Canonically, actin clearance from the center of the immune synapse (cSMAC) is required for fusion of lytic granules to the center of the synapse \cite{Ritter2015}.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter1/actinclearance.png}
+	\caption{Cell types of the innate vs. the adaptive immune system}
+	\caption*{BLAH This figure is adapted from \cite{Rak2011}.}
+	\label{fig:actinclearance}
+\end{figure}
+
+Newer, more recent models of degranulation highlight the need for transient actin polymerization at the site of degranulation to potentiate the pore forming effects of perforin \cite{Tamzalit2018}. This is related to T cell mechanical force exertion against the target, which significantly amplifies T cell effector function \cite{Tamzalit2018}.
 
 \section{T cell mechanical force exertion}
 Immune cell-immune cell interactions are typically described as a series of interrelated biochemical receptor-ligand signaling processes (and this introduction has done the same). While this characterization is not incorrect, it ignores the mechanical dimension of immune cell interactions, which have been identified as a significant hubs of cellular decision making. Immune cells have been demonstrated to have a number of biophysical sensing functions, including cancer cell surveillance and immune cell function and cytotoxicity.
@@ -81,6 +109,15 @@ increases the lifetime of the interaction. It was shown that the capacity to for
 a catch bond plays a critical role in enabling the TCR to discriminate between
 high and low affinity agonists69. Together these studies demonstrate the
 important role of mechanobiology in TCR activation and signaling.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter1/tcrcatchbond.jpg}
+	\caption{Cell types of the innate vs. the adaptive immune system}
+	\caption*{BLAH This figure is adapted from \cite{Liu2014}.}
+	\label{fig:actinclearance}
+\end{figure}
+
 The IS has been shown to be a dynamic and physical structure that is
 capable of exerting mechanical force70,71. Naïve T cells have been shown to
 exert mechanical force on polydimethylsiloxane (PDMS) pillars coated with
