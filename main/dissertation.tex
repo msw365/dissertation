@@ -92,17 +92,14 @@ Last but not least, I must thank my family: my mom and my dad and my younger bro
 \tablelistpage
 \figurelistpage
 
-\normalspacing \setcounter{page}{1} \pagenumbering{arabic}
-\pagestyle{cornell} \addtolength{\parskip}{0.5\baselineskip}
-
 % Abbreviations table
-\section{Table of Abbreviations}
+\abbrlist
 %\label{tab:abbreviations}
-\begin{longtable}
-\caption{Table of Abbreviations}
-\centering
-\begin{tabular}{l m{10cm} l}
-	\toprule
+\begin{longtable}{| p{.30\textwidth} | p{.70\textwidth} |}
+%\caption{Table of Abbreviations}
+%\centering
+%\begin{tabular}{l m{10cm} l}
+%	\toprule
 	ADAP, or Fyb & Adhesion- and degranulation-promoting adaptor protein \\	
 	Akt & Protein Kinase B \\
 	APC & Allophycocyanin \\
@@ -186,15 +183,18 @@ Last but not least, I must thank my family: my mom and my dad and my younger bro
 	SA & Streptavidin \\
 	TCR & T cell receptor \\
 	Vav1 & Vav Guanine Nucleotide Exchange Factor 1 \\
-	WASP & Wiskott-Aldrich syndrome protein
+	WASP & Wiskott-Aldrich syndrome protein \\
 	WAVE2 & WASP-verprolin homolog 2 \\
 	WT & Wild-type \\
 	YFP & Yellow fluorescent protein \\
-	\bottomrule
-	\end{tabular}
+%	\bottomrule
+%	\end{tabular}
 	\label{tab:abbreviations}
 \end{longtable}
 %\subfile{abbreviations}
+
+\normalspacing \setcounter{page}{1} \pagenumbering{arabic}
+\pagestyle{cornell} \addtolength{\parskip}{0.5\baselineskip}
 
 \chapter{INTRODUCTION AND BACKGROUND}
 \subfile{../chapter1/chapter1}
