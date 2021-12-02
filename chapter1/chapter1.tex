@@ -47,6 +47,8 @@ The phosphorylated CD3 ITAMs recruit the protein tyrosine kinase ZAP70 that bind
 
 One of the most crucial signaling molecules that binds to LAT is the protein phospholipase C$\gamma$1 (PLC$\gamma$), which generates key lipid secondary messenger molecules. Phosphatidylinositol 4,5-bisphosphate ($PIP_{2}$) is an input to PLC$\gamma$ function. Once phosphorylated and activated by Itk, PLC$\gamma$'s enzymatic activity (using $PIP_{2}$ as a substrate) generates two products: diacylglycerol (DAG) and the soluble inositol 1,4,5-trisphosphate ($IP_{3}$). Diacylglycerol accumulates in the IS, which prompts recruitment of the microtubule motor protein dynein and drives polarization of the microtubule-organizing center (MTOC) \cite{Quann2009} and the recruitment of lytic granules to the immune synapse (further discussed in the T cell degranulation and target cell death introduction section \cite{Stinchcombe2006}. $IP_{3}$ is soluble and diffuses throughout the cytosol, eventually binding to its receptor inositol trisphosphate receptor (InsP3R), located on the endoplasmic reticulum (ER). The binding of $IP_{3}$ to InsP3R triggers release of calcium ($Ca^{2+}$) ions into the cytosol, initiating calcium-dependent transcription programming. These include the NFAT, NF-$\kappa$B, and AP1 signaling pathways, all of which assist in fully activating the T cell. Another notable lipid secondary messenger is phosphatidylinositol (3,4,5)-trisphosphate ($PIP_{3}$). $PIP_{2}$ is phosphorylated by the phosphoinositide 3-kinase (PI-3K) to give $PIP_{3}$, which further activates downstream signaling proteins, most notably Akt, which is highly involved in T cell metabolism.
 
+When calcium depletion is detected in the cytosol by the STIM1 protein, calcium release-activated channels such as Orai1 are activated to replenish cytosolic calcium.  This calcium flux is a required step for lymphocyte degranulation \cite{Maul-Pavicic2011}. 
+
 The generation of spatial gradients and patterns of lipid secondary messenger molecules at the plasma membrane is highly consequential, resulting in the formation of a necessary killing and major signaling structure called the immune synapse. 
 
 \section{The immunological synapse and the T cell cytoskeleton}
@@ -73,9 +75,7 @@ The killing mechanism of CTLs is fundamental to robust anticancer and antiviral 
 
 The T cell has evolved countless mechanisms in order to balance this dual mandate. The most prevalent mechanism of T cell-mediated killing of target cells involves the secretion of the hydrophobic protein perforin and granzyme proteases, called degranulation \cite{Dustin2010, Stinchcombe2007}. When released, perforin oligomerizes in a calcium dependent manner \cite{Law2010} and forms pores on the target cell surface, (around 16nm in diameter) \cite{Cartwright2014}, inducing significant membrane damage. The target cell responds to this traumatic event at the plasma membrane using a mechanism that permits granzymes entry to the cytoplasm, where they cleave apoptotic substrates that induce apoptosis \cite{Keefe2005}. Because all cell types are capable of being killed and cleared in this way (that is to say, both infected and healthy cells),  specialized mechanisms have evolved over time in immune cells to ensure that the effects of perforin and granzyme are constrained to the target cell alone.  
 
-This calcium flux is a required step for lymphocyte degranulation, which is (ORAI1-mediated calcium influx is required for human cytotoxic lymphocyte degranulation and target cell lysis)
-
-Cytotoxic T lymphocytes store their perforin and granzymes in specialized secretory lysosomes called lytic granules (0.5 to 2 $\mu$) \cite{Sanchez-Ruiz2011}, whose acidic pH environment quenches the lytic and apoptotic activity of both proteins \cite{Thiery2014, Keefe2005}. Following mere minutes of target cell recognition, the lytic granules are trafficked along microtubules to the immunological synapse (IS). At this site, they fuse with the plasma membrane, releasing their contents into the intercellular space.
+Cytotoxic T lymphocytes store their perforin and granzymes in specialized secretory lysosomes called lytic granules (0.5 to 2 $\mu$m) \cite{Sanchez-Ruiz2011}, whose acidic pH environment quenches the lytic and apoptotic activity of both proteins \cite{Thiery2014, Keefe2005}. Following mere minutes of target cell recognition, the lytic granules are trafficked along microtubules to the immunological synapse (IS). At this site, they fuse with the plasma membrane, releasing their contents into the intercellular space.
 
 \begin{figure}[htbp]
 	\centering
@@ -90,8 +90,8 @@ At the same time,  F-actin and the associated actin nucleation promoting factors
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\textwidth]{../figures/chapter1/actinclearance.png}
-	\caption{Canonical model of actin clearance as a condition for lytic granule secretion}
-	\caption*{BLAH This figure is adapted from \cite{Rak2011}.}
+	\caption{Canonical model of actin clearance as a necessary condition for lytic granule secretion}
+	\caption*{Model of central actin clearing for MTOC polarization and lytic granule fusion. Upon TCR activation, MTOC polarizes towards the immune synapse with the assistance of the motor protein dynein, bringing lytic granules towards the IS and docking them in preparation for degranulation. The actin meshwork clears from the center of the IS, forming a mature dSMAC actin-ring (as well as the associated pSMAC and cSMAC) and exposing available synaptic membrane for degranulation. This figure is adapted from \cite{Rak2011}.}
 	\label{fig:actinclearance}
 \end{figure}
 
@@ -101,6 +101,14 @@ Newer, more recent models of degranulation highlight the need for transient acti
 Immune cell-immune cell interactions are typically described as a series of interrelated biochemical receptor-ligand signaling processes (and this introduction has done the same). While this characterization is not incorrect, it ignores the mechanical dimension of immune cell interactions, which have been identified as a significant hubs of cellular decision making. Immune cells have been demonstrated to have a number of biophysical sensing functions, including cancer cell surveillance and immune cell function and cytotoxicity.
 
 The CTL immune synapse has been shown to be a physically dynamic structure, capable of exerting force against a resisting target or surface and 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter1/mechforce.png}
+	\caption{T cells exert mechanical force against target cells}
+	\caption*{Illustration of T cell force exertion against the target cell. T cells use biophysical force in concert with biochemical signaling axes to optimize their own activation and cytotoxic programming.  This force potentiates the pore-forming effect of perforin. This figure is adapted from \cite{Rak2011}.}
+	\label{fig:mechforce}
+\end{figure}
 
 Some recent studies demonstrate that the actin-rich structures formed during T cell adhesion and degranulation are actually involved in boosting the lytic activity of perforin by dynamically applying mechanical force against the target cell \cite{Basu2016, Tamzalit2018} and sensitizing the target cell to perforin insertion, which must overcome the hydrophobic interior of the plasma membrane in order to pierce the target cell plasma membrane and trigger cell lysis.
 
