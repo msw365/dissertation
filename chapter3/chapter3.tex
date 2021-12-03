@@ -11,6 +11,14 @@ Given that degranulation is the lynchpin to effector T cell function, there has 
 \subsection{Force-directed localization of synaptic granule fusion}
 - discuss fig 7 in detail, 2016 basu cell paper
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{../figures/chapter3/ddp.png}
+	\caption{Degranulation is spatiotemporally correlated with force exertion at the IS}
+	\caption*{\textbf{A}: Diagram schematizing fluorescent detection of degranulation during a micropillar experiment. \textbf{B}: Representative time-lapse montage showing pillar deflections during a degranulation event (indicated by the yellow arrowhead). Time is indicated in M:SS in the top right corner of each image. \textbf{C}: Graph of the offset time between contact formation and degranulation (degranulation time).  \textbf{D}: Graphical representation of the pillar array in (B), with the degranulation position depicted as a green circle and the cell envelope at the moment of degranulation shown in black. Pillars are color-coded based on their average deflection during the degranulation. Warmer colors (e.g., orange, red) denote stronger deflections. The DDP for this degranulation is indicated by the double-headed white arrow. \textbf{E}: Histogram plot derived from the experiment in (B) showing the DDP for each position in the CTL interface. The mean value for the distribution is denoted by the vertical cyan line. The vertical green line indicates the DDP for the degranulation itself.  \textbf{F}: DDPs of degranulation (Degran) were compared to the mean values of their paired null distributions. ***p $\textless$ 0.001, calculated by two-tailed paired t test.  This figure is adapted from \cite{Basu2016}.}
+	\label{fig:ddp}
+\end{figure}
+
 \subsection{Actin cytoskeletal direction of synaptic integrin localization}
 WASP LFA1 loic dupre paper
 
@@ -26,13 +34,62 @@ Lytic granules, the specialized secretory lysosomes that store perforin and gran
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\textwidth]{../figures/chapter3/ch3fig1pillarswithouticam.png}
+	\includegraphics[width=\textwidth]{../figures/chapter3/fig1pillarswithouticam.png}
 	\caption{LFA-1 is required for synaptic force exertion}
-	\caption*{\textbf{A} OT-1 CTLs labeled with fluorescent anti-CD45 Fab were stimulated on PDMS micropillar arrays coated with pMHC with or without ICAM-1. Traction forces were derived from pillar displacement.  \textbf{B} Left, representative images of CTLs interacting with the arrays. Scale bars = 2 $\mu$m.  Right, mean force exertion against the array graphed against time. N is greater than or equal to 8 for each sample.}
-	\label{fig:ch3fig1pillarswithouticam}
+	\caption*{\textbf{A}: OT-1 CTLs labeled with fluorescent anti-CD45 Fab were stimulated on PDMS micropillar arrays coated with pMHC $\pm$ ICAM-1. Traction forces were derived from pillar displacement.  \textbf{B}: Left, representative images of CTLs interacting with the arrays. Scale bars = 2 $\mu$m.  Right, mean force exertion against the array graphed against time. N is $\geq$ to 8 for each sample.}
+	\label{fig:fig1pillarswithouticam}
 \end{figure}
 
-To evaluate the importance of LFA-1 for degranulation and cytotoxicity, we treated cocultures containing OT-1 CTLs and OVA-loaded RMA-s target cells with a neutralizing antibody that specifically disrupts LFA-1-ICAM-1/2 binding (Fig. 1c). Blocking LFA-1 in this manner dramatically inhibited antigen-induced degranulation, which we measured by surface exposure of the lysosomal marker Lamp1 (Fig. 1d and Fig. S1a) and by the depletion of intracellular granzyme B (Fig. S1b). Anti-LFA-1 neutralizing antibodies also strongly suppressed cytotoxicity, as quantified by lysis of target cells (Fig. 1e). LFA-1 engagement was similarly important for degranulation responses elicited by stimulatory beads coated with pMHC and/or ICAM-1 (Fig. S1c-e). Collectively, these results were consistent with a specific role for LFA-1 in degranulation, but they did not rule out the possibility that LFA-1 engagement might promote this response secondarily by augmenting T cell activation (Fig. 1c). Indeed, LFA-1 is known to function as a “costimulatory” receptor by lowering the antigen threshold required for signaling and TCR-induced gene expression17, 18. In our hands, LFA-1 blockade altered some, but not all, of these responses. We observed no effect on antigen-induced proliferation (Fig. S2a), assessed by dilution of CellTrace Violet dye. Signaling through the MAP kinase (MAPK) and PI-3 kinase (PI3K) pathways, which we measured by phosphorylation of Erk1/2 and Akt, respectively, was also normal (Fig. S2b). Conversely, antibody treatment dampened cytosolic calcium ($Ca^{+}$) influx (Fig. S2c) and inhibited the upregulation of CD69, an immediate early response gene (Fig. 1f and S1f). To decouple these LFA-1 dependent effects on T cell activation from a distinct and specific role in degranulation, we used a combination of phorbol myristate acetate (PMA) and the $Ca^{2+}$ ionophore A23187 (Iono) to induce T cell activation in the absence of TCR engagement (Fig. 1c, S1c). CTLs treated with PMA/Iono alone exhibited robust CD69 expression (Fig. 1f, S1f), indicative of strong activation. Their degranulation responses were quite modest, however (Fig. 1d, S1e), pointing to the importance of target contact/proximity in stimulating cytotoxic secretion. Indeed, robust Lamp1 exposure was only observed in CTLs that were concomitantly exposed to antigenic pMHC and ICAM, either on target cells or on beads. Critically, this ligand-induced component of degranulation was completely inhibited by LFA-1 blockade (Fig. 1d, S1e). Taken together, these results indicate that LFA-1 engagement promotes cytotoxic secretion independently of T cell activation and at a level downstream of early signaling events. Notably, LFA-1 was also required for the formation of strong CTL-target cell conjugates, both in the presence and in the absence of PMA/Iono (Fig. 1g). Hence, the capacity of LFA-1 to stimulate degranulation was phenotypically linked to its ability to mediate strong adhesion. 
+To evaluate the importance of LFA-1 for degranulation and cytotoxicity, we treated cocultures containing OT-1 CTLs and OVA-loaded RMA-s target cells with a neutralizing antibody that specifically disrupts LFA-1-ICAM-1/2 binding (Figure \ref{fig:fig1lfablockmodel}).
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.9\columnwidth]{../figures/chapter3/fig1lfablockmodel.png}
+	\caption{Model of antibody blocking of LFA-1 and small molecule-mediated T cell activation}
+	\caption*{OVA-loaded RMA-s target cells were mixed with OT-1 CTLs in the presence of LFA1 blocking antibody ($\alpha$LFA-1) or isotype control. PMA/Iono was applied to some samples in order to drive TCR independent CTL activation.}
+	\label{fig:fig1lfablockmodel}
+\end{figure}
+
+Blocking LFA-1 in this manner dramatically inhibited antigen-induced degranulation, which we measured by surface exposure of the lysosomal marker Lamp1 (Fig. 1d and Fig. S1a) and by the depletion of intracellular granzyme B (Fig. S1b). 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{../figures/chapter3/fig1flow.png}
+	\caption{Measuring degranulation via flow cytometry}
+	\caption*{A representative FACS histogram of CTL Lamp1 staining, measured 90 min after cell mixing.}
+	\label{fig:fig1flow}
+\end{figure} 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{../figures/chapter3/fig1degranactivate.png}
+	\caption{LFA-1 is required for degranulation}
+	\caption*{\textbf{A}: Lamp1 exposure (degranulation), measured 90 min after CTL-target cell mixing. \textbf{B} CD69 expression, measured
+90 min after CTL-target cell mixing.}
+	\label{fig:fig1degranactivate}
+\end{figure} 
+ 
+Anti-LFA-1 neutralizing antibodies also strongly suppressed cytotoxicity, as quantified by lysis of target cells (Fig. 1e). 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{../figures/chapter3/fig1killing.png}
+	\caption{LFA-1 is required for cytotoxicity}
+	\caption*{Target cell killing, measured 4 h after CTL-target cell mixing.}
+	\label{fig:fig1killing}
+\end{figure} 
+ 
+ LFA-1 engagement was similarly important for degranulation responses elicited by stimulatory beads coated with pMHC and/or ICAM-1 (Fig. S1c-e). 
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{../figures/chapter3/fig1suppbeads.png}
+	\caption{LFA-1 blockade disrupts CTL degranulation}
+	\caption*{\textbf{A}: A diagram schematizing CTL activation by stimulatory beads coated with pMHC (H-2Kb-OVA) $\pm$ ICAM-1. \textbf{B}: OT-1 CTLs were mixed with beads coated with increasing amounts of pMHC in the presence or absence of ICAM-1. Degranulation was measured 90 min after CTL stimulation. (\textbf{C-D}) Beads coated with pMHC and ICAM-1 were incubated with OT-1 CTLs in the presence or absence of PMA/Iono and treated with either $\alpha$LFA-1 or isotype control. Graphs show degranulation (\textbf{C}) and CD69 expression (\textbf{D}) measured 90 min after CTL stimulation. All error bars denote SEM. *, **, ***, and **** denote P $\leq$ 0.05, P $\leq$ 0.01, P $\leq$ 0.001, and P $\leq$ 0.0001, calculated by 2way ANOVA. All data are representative of at least two independent experiments.}
+	\label{fig:fig1suppbeads}
+\end{figure} 
+ 
+Collectively, these results were consistent with a specific role for LFA-1 in degranulation, but they did not rule out the possibility that LFA-1 engagement might promote this response secondarily by augmenting T cell activation (Fig. 1c). Indeed, LFA-1 is known to function as a “costimulatory” receptor by lowering the antigen threshold required for signaling and TCR-induced gene expression17, 18. In our hands, LFA-1 blockade altered some, but not all, of these responses. We observed no effect on antigen-induced proliferation (Fig. S2a), assessed by dilution of CellTrace Violet dye. Signaling through the MAP kinase (MAPK) and PI-3 kinase (PI3K) pathways, which we measured by phosphorylation of Erk1/2 and Akt, respectively, was also normal (Fig. S2b). Conversely, antibody treatment dampened cytosolic calcium ($Ca^{+}$) influx (Fig. S2c) and inhibited the upregulation of CD69, an immediate early response gene (Fig. 1f and S1f). To decouple these LFA-1 dependent effects on T cell activation from a distinct and specific role in degranulation, we used a combination of phorbol myristate acetate (PMA) and the $Ca^{2+}$ ionophore A23187 (Iono) to induce T cell activation in the absence of TCR engagement (Fig. 1c, S1c). CTLs treated with PMA/Iono alone exhibited robust CD69 expression (Fig. 1f, S1f), indicative of strong activation. Their degranulation responses were quite modest, however (Fig. 1d, S1e), pointing to the importance of target contact/proximity in stimulating cytotoxic secretion. Indeed, robust Lamp1 exposure was only observed in CTLs that were concomitantly exposed to antigenic pMHC and ICAM, either on target cells or on beads. Critically, this ligand-induced component of degranulation was completely inhibited by LFA-1 blockade (Fig. 1d, S1e). Taken together, these results indicate that LFA-1 engagement promotes cytotoxic secretion independently of T cell activation and at a level downstream of early signaling events. Notably, LFA-1 was also required for the formation of strong CTL-target cell conjugates, both in the presence and in the absence of PMA/Iono (Fig. 1g). Hence, the capacity of LFA-1 to stimulate degranulation was phenotypically linked to its ability to mediate strong adhesion. 
 
 \subsection{Degranulation occurs in IS domains containing ligand-bound TCR and ligand-bound LFA-1 (Fig 2, S3)}
 That both the TCR and LFA-1 were required for robust degranulation (Fig. 1 and S1) raised the possibility that both receptor types must be engaged within the same cell-cell interface to elicit cytotoxic responses. This requirement would presumably enhance the specificity of killing by ensuring that toxic factors are released only against bona fide target cells (expressing cognate pMHC) that are tightly associated with the CTL (via integrin adhesion). To test this idea, we stimulated CTLs using beads coated with both pMHC and ICAM-1 (cis) or using a mixture of beads coated separately with only pMHC or ICAM-1 (trans) (Fig. 2a). Care was taken to make sure that the total amount of accessible pMHC and ICAM-1 was identical in each experimental group and that CTLs could engage multiple beads simultaneously (Fig. S3a). Strikingly, immobilized ICAM-1 boosted TCR-induced degranulation only when presented in the cis configuration (Fig. 2b). Indeed, CTLs stimulated with the trans mixture of pMHC- and ICAM-1- coated beads responded indistinguishably from CTLs stimulated with pMHC beads alone. We observed the same pattern of results using CD69 upregulation as the downstream readout (Fig. 2c). Hence, ligand-bound LFA-1 must share the same interface as the ligand-bound TCR in order to boost cytotoxicity and T cell activation. Building upon this idea, we next examined whether local coengagement of LFA-1 and the TCR could control the position of degranulation events within the IS. Using protein microstamping19, we prepared glass coverslips containing 2 $\mu$m spots of fluorescent streptavidin spaced in a 10 $\mu$m x 10 $\mu$m square grid. These surfaces were then incubated with mixtures of unbiotinylated proteins to coat/block the empty glass between streptavidin spots, and then with biotinylated proteins to load the spots themselves. By varying the composition of coating and loading mixtures, we were able to generate a panel of distinct micropatterned substrates: 1) ICAM-1 spots within a uniform background of pMHC (ICAM-spot), 2) pMHC spots on an ICAM-1 background (Antigen-spot), and 3) spots containing both ICAM-1 and pMHC on a nonstimulatory (BSA coated) background (Dual-spot) (Fig. 2d). We also generated control surfaces containing empty streptavidin spots in a background of admixed pMHC and ICAM-1. CTLs plated on Dualspot surfaces evinced $Ca^{2+}$ flux only during periods of spot contact (Fig. S3b and Movies S1-2), confirming that biotinylated stimulatory ligands could be constrained in space by the patterned streptavidin. To monitor degranulation position in this system, we employed a reporter construct in which the pH-sensitive fluorescent protein pHluorin is linked to the lytic granule resident protein Lamp120. Because pHluorin is quenched in the low pH granule environment, it becomes visible only upon fusion, generating a transient burst of fluorescence that reveals the position of the degranulation site within the IS. When CTLs expressing pHluorin-Lamp1 were imaged on ICAMspot, Antigen-spot, or Dual-spot surfaces, degranulation events tended to cluster around the fluorescent spots containing ICAM-1 and/or pMHC (Fig. 2e-f and Movie S3). In all three cases, the mean distance between degranulation events and the spots closest to them was substantially lower than one would expect by chance (dotted line in Fig. 2f) and significantly less than the corresponding distances measured between empty SA spots and degranulations on control surfaces. The enrichment of degranulation in zones where pMHC and ICAM-1 were either copresented (Dual-spot) or closely apposed (ICAM-spot and Antigen-spot) further supports a critical role for the coengagement of the TCR and LFA-1 in guiding cytotoxic secretion and suggests that permissive secretory domains of receptor coengagement can be substantially smaller than the IS itself. Although all three micropatterned substrates elicited targeted degranulation, responses to the Dual-spot and Antigen-spot configurations were significantly more focused than what we observed on ICAM-spot surfaces (Fig. 2f). To explore the basis for this difference, we imaged CTLs expressing a fluorescent form of the LFA-1 a-chain (CD11a-YFP) on surfaces containing focal LFA-1 or TCR ligands. Because the CD11a-YFP CTLs were derived from a polyclonal animal rather than an OT-1 transgenic, we used an anti-CD3 antibody instead of antigenic pMHC to engage the TCR. On ICAM-spot surfaces (anti-CD3 in the background), LFA-1 tended to localize to the micropatterned ICAM-1 (Fig. 2g), consistent with ligand recognition. The Anti-CD3-spot configuration, however, induced even stronger focal accumulation of LFA-1 (Fig. 2h), which was surprising considering that ICAM-1 was coated in the background of these surfaces. Interestingly, LFA-1 recruitment on Anti-CD3-spot substrates was most apparent not over the anti-CD3 spot itself but in the surrounding 1-2 $\mu$m neighborhood. This could potentially reflect inside-out integrin activation and clustering induced by local TCR signaling15. The unexpectedly robust accumulation of LFA-1 to areas of focal TCR stimulation potentially explains why Antigen-spot surfaces elicited more focused degranulation than their ICAM-spot counterparts. Within the IS, both the TCR and LFA-1 are subjected to F-actin dependent pulling forces, which are thought to drive the formation of catch bonds between each receptor and its respective ligand, promote conformational changes, and induce signal transduction10, 11, 14, 21. 
@@ -51,7 +108,7 @@ Taken together, our data suggest a model in which degranulation occurs at permis
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\textwidth]{../figures/chapter3/integrinmodel.png}
+	\includegraphics[width=0.7\columnwidth]{../figures/chapter3/integrinmodel.png}
 	\caption{Mechanical licensing of degranulatoin by integrin adhesions}
 	\caption*{Lytic granules fuse within synaptic subdomains defined by ligand-bound integrins under tension.}
 	\label{fig:integrinmodel}
