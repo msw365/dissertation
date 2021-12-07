@@ -33,8 +33,9 @@
 \usepackage{caption}
 \usepackage{indentfirst} % indent first paragraph after \section tags
 \usepackage{booktabs} % for tables
-%Packages added by Mitchell
-%
+% Packages added by Mitchell
+% For multi-page figures and captions:
+\DeclareCaptionLabelFormat{adja-page}{\hrulefill\\#1 #2 \emph{(previous page)}}
 
 %if you're having problems with overfull boxes, you may need to increase
 %the tolerance to 9999
