@@ -9,7 +9,12 @@ Given that degranulation is the lynchpin to effector T cell function, there has 
 %MENTION DIACYLGLYCEROL AND MORGAN'S PAPER!
 
 \subsection{Force-directed localization of synaptic granule fusion}
-- discuss fig 7 in detail, 2016 basu cell paper
+\label{Force-directed localization of synaptic granule fusion}
+An illuminating study demonstrated that lytic granules are homed towards regions of synaptic force exertion, implying that T cells "aim" their lytic granules (see Figure \ref{fig:introddp}) \cite{Basu2016}. Such an arrangement brings the benefits of locally mechanopotentiating perforin pore formation and increases target cell lysis. This also conveniently piggybacks off of the effects of local increased TCR signaling activity as described in section \ref{TCR activation and downstream signaling} (although this relationship has yet to be further explored). What remains to be seen is how a physical, non-tangible phenomena (force) is transformed into a molecular query:response such as lytic granule fusion. Most likely, a mechanosensitive receptor that is associated with cytotoxicity with significant signaling capacity regulates this spatiotemporal relationship. 
+
+Such an arrangement could produce numerous benefits. An outstanding question in the T cell field is how T cells avoid the cytotoxic effects of their own perforin and achieve unidirectional killing \cite{Lopez2013}. Some studies search for particular shielding molecules expressed only on the T cell side of the synapse \cite{Balaji2002} or a broader T cell shielding method \cite{Rudd-schmidt} from perforin. In lieu of a particular molecule, we would like to suggest that T cells use a particular step-wise logic in order to confirm that the queried target that they are engaged with is a \textit{bona fide} target cell via physical force engagement (quite literally, hugging or embracing their target before applying \textit{le baiser de la mort}, or the kiss of death). Once a safe contact against a \textit{bona fide} target cell has been established, the T cell can then secrete perforin into a hyperlocal, perforin-sensitive synaptic cleft environment for target cell destruction. Physical force is critical for mediating this hypothetical function. 
+
+In this study, we explored the integrin LFA-1 as a possible candidate molecule for synaptic force transduction to home lytic granules, given its capacity to mechanically signal (see section \ref{Integrin biology and mechanotransduction} for further information on integrins).
 
 \begin{figure}[htbp]
 	\centering
@@ -19,15 +24,25 @@ Given that degranulation is the lynchpin to effector T cell function, there has 
 	\label{fig:introddp}
 \end{figure}
 
-\subsection{Actin cytoskeletal direction of synaptic integrin localization}
-WASP LFA1 loic dupre paper
+\subsection{Integrin/LFA-1 biology and mechanotransduction}
+\label{Integrin biology and mechanotransduction}
+Integrins are transmembrane obligate heterodimers that facilitate cell-cell adhesion. They are composed of an $\alpha$ chain and a $\beta$ chain. Upon  binding to their ligand, they greatly increase the adhesive capacity of the cell, and strongly upregulate signal transduction pathways as well as rearrange the actin cytoskeleton to increase force transduction across the synapse. Interestingly, integrins reach higher signaling capacities with the more force that is applied across their bond with their ligand, displaying a catch bond behavior \cite{Chen2010} and more generally a functionally positive relationship with force application (as opposed to a slip bond). Integrins also fine-tune TCR signaling by restricting the flow of actin at the immune synapse \cite{Jankowska2018}, highlighting their signaling capacity as referenced in section \ref{Force-directed localization of synaptic granule fusion}. Here, we will specifically review the exact behavior of the integrin LFA-1, but the general principles of LFA-1 activation and binding to its ligand ICAM-1 apply broadly to integrin biology.
 
-\subsection{Integrin biology and mechanotransduction}
-Transmembrane heterodimers 
+LFA-1 exists in an inactive, bent state of the surface of the T cell ("Low affinity", see Figure \ref{fig:lfa}) \cite{Comrie2015_2}. Signaling events downstream of the TCR, trigger RAP1-GTPase recruits factors including RAPL to interact with the $\alpha$ subunit of LFA-1 to induce integrin activation (this is called inside-out signaling) \cite{Walling2018}. Simultaneously, talin cleavage permits the FERM domain to interact with the NPxY motif of the $\beta$ subunit cytosolic tail. This interaction induces a separation of the salt bridge inducing cytosolic tail separation ("Intermediate affinity"). Molecules such as RIAM, talin, paxillin, and vinculin then with the cytosolic tails to recruit additional effector molecules and bind to the ICAM-1 ligand, forming a molecular clutch against the target cell ("High affinity") \cite{Comrie2015_2}. This linkage promotes a mechanical scaffold to interact with actin and reinforce LFA-1 activity (outside-in signaling). Arp2/3 will promote continued actin filament growth, and the interaction of LFA-1 with ICAM-1 and $\beta$-actin allows for force driven responses through the $\beta$ subunit, promoting focal adhesion kinases (FAK) and other Rho family GTPases (Figure \ref{fig:lfa}).
 
-Integrins fine-tune TCR signaling by restricting the flow of actin at the immune synapse \cite{Jankowska2018}.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{../figures/chapter3/lfa.jpg}
+	\caption{Cartoon of LFA-1 activation and signaling behavior.}
+	\caption*{Adapted from \cite{Walling2018.}
+	\label{fig:lfa}
+\end{figure}
 
-LFA-1 function is essential for the activation and proliferation of na{\"i}ve T cells \cite{Wang2009}
+LFA-1 was a particular integrin of interest to study given its importance in CTL cytotoxicity and immune synapse formation, detailed previously in section \ref{The immunological synapse and the T cell cytoskeleton} and more extensively in section \ref{The actin cytoskeleton directs integrin localization}. LFA-1 function is essential for the activation and proliferation of na{\"i}ve T cells \cite{Wang2009, Capece2017}. Additionally, given that Rab27a was found to be a critical regulator of intracellular LFA-1 translocation to the cell surface \cite{Capece2017} and that the lytic granules are transported to the immune synapse via a Rab27a-dependent mechanism \cite{Kurowska2016}, it seemed reasonable to investigate LFA-1 as a possible mechanotransducing molecule that could locally signal permissible regions for degranulation.
+
+\subsection{The actin cytoskeleton directs integrin localization}
+\label{The actin cytoskeleton directs integrin localization}
+WASP LFA1 loic dupre paper \cite{Houmadi2018}
 
 \section{Results}
 
@@ -214,7 +229,7 @@ Not all cells express LFA-1 ligands, raising the question of whether integrin me
 	\centering
 	\includegraphics[width=1.0\columnwidth]{../figures/chapter3/fig5model.png}
 	\caption{B16F10 cells do not express ICAM-1.}
-	\caption*{\textbf{(A)}: Representative histograms showing ICAM-1 expression in RMA-s (left) and B16F10 (right) cells. \textbf{(B)} Model of CTL-mediated killing of B16F10 cells that requires both the TCR and an unidentified integrin X.}
+	\caption*{\textbf{(A)}: Representative histograms showing ICAM-1 expression in RMA-s (left) and B16F10 (right) cells. \textbf{(B)}: Model of CTL-mediated killing of B16F10 cells that requires both the TCR and an unidentified integrin X.}
 	\label{fig:fig5model}
 \end{figure} 
 
@@ -229,7 +244,7 @@ LFA-1 blockade failed to inhibit either of these responses (Fig. 5c), consistent
 \end{figure} 
 
 \section{Discussion}
-Taken together, our data suggest a model in which degranulation occurs at permissive secretory subdomains within the IS that are defined by mechanically active integrins (see Figure \ref{fig:immunesynapse}. TCR signaling plays critical role in this process by inducing close contact formation and also by triggering $Ca^{2+}$ influx, which is required for granule fusion27-29. In the absence of integrin dependent force exertion, however, TCR signaling alone is insufficient for robust cytotoxic secretion. Indeed, our results imply that one of the major ways that the TCR promotes killing is by locally activating LFA-1 within the IS. This integrin-based model for degranulation both explains our data and is consistent with prior work documenting lytic granule accumulation and perforin release in synaptic subdomains defined by the engagement of adhesive and activating receptors30, 31. In the absence of LFA-1 ligands, we speculate that other integrins may assume its licensing role. Indeed, the fact that B16F10 cell killing requires talin, but not LFA-1, strongly implies the existence of alternative integrin activators. CTLs express both VLA-4 ($\alpha$4$\beta$1) and CD103 ($\alpha$E$\beta$7), which recognize protein ligands (VCAM-1/2 and E-Cadherin, respectively) found on subsets of potential target cells. CD103 is a particularly interesting candidate, as it has been shown to promote granule polarization and release toward E-Cadherin expressing tumor cells32. Previous studies indicate that synaptic forces enhance the pore forming activity of perforin by straining the target membrane8, 12. The integrin dependent targeting model described above would be expected to facilitate this process by directing perforin to mechanically active subdomains within the IS. Integrin-mediated mechanotransduction also provides an elegant mechanism for identifying regions of synaptic membrane that are tightly engaged with the target cell, where extensive mechanical coupling between directly opposing membranes would enable the CTL to “feel” the presence of the target by pushing or pulling against it. Guiding degranulation to these regions of close apposition would ensure that only the target is exposed to perforin and granzyme, thereby limiting damage to innocent bystander cells. Hence, using mechanically active integrins to license cytotoxic secretion likely promotes both the potency and the specificity of killing responses. 
+Taken together, our data suggest a model in which degranulation occurs at permissive secretory subdomains within the IS that are defined by mechanically active integrins (see Figure \ref{fig:immunesynapse}). TCR signaling plays critical role in this process by inducing close contact formation and also by triggering $Ca^{2+}$ influx, which is required for granule fusion27-29. In the absence of integrin dependent force exertion, however, TCR signaling alone is insufficient for robust cytotoxic secretion. Indeed, our results imply that one of the major ways that the TCR promotes killing is by locally activating LFA-1 within the IS. This integrin-based model for degranulation both explains our data and is consistent with prior work documenting lytic granule accumulation and perforin release in synaptic subdomains defined by the engagement of adhesive and activating receptors30, 31. In the absence of LFA-1 ligands, we speculate that other integrins may assume its licensing role. Indeed, the fact that B16F10 cell killing requires talin, but not LFA-1, strongly implies the existence of alternative integrin activators. CTLs express both VLA-4 ($\alpha$4$\beta$1) and CD103 ($\alpha$E$\beta$7), which recognize protein ligands (VCAM-1/2 and E-Cadherin, respectively) found on subsets of potential target cells. CD103 is a particularly interesting candidate, as it has been shown to promote granule polarization and release toward E-Cadherin expressing tumor cells32. Previous studies indicate that synaptic forces enhance the pore forming activity of perforin by straining the target membrane8, 12. The integrin dependent targeting model described above would be expected to facilitate this process by directing perforin to mechanically active subdomains within the IS. Integrin-mediated mechanotransduction also provides an elegant mechanism for identifying regions of synaptic membrane that are tightly engaged with the target cell, where extensive mechanical coupling between directly opposing membranes would enable the CTL to “feel” the presence of the target by pushing or pulling against it. Guiding degranulation to these regions of close apposition would ensure that only the target is exposed to perforin and granzyme, thereby limiting damage to innocent bystander cells. Hence, using mechanically active integrins to license cytotoxic secretion likely promotes both the potency and the specificity of killing responses. 
 
 \begin{figure}[htbp]
 	\centering
